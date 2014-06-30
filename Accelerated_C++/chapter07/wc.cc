@@ -8,7 +8,7 @@ using std::endl;
 using std::map;
 using std::string;
 
-int main()
+void main()
 {
 	string s;
 	map<string, int> counters; // store each word and an associated counter
@@ -26,6 +26,7 @@ int main()
 	     it != counters.end(); ++it) {
 		cout << it->first << "\t" << it->second << endl;
 	}
+	
 	return 0;
 }
 

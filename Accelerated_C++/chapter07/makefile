@@ -2,7 +2,14 @@ CXX = g++
 CC = g++
 CXXFLAGS = -I../chapter05
 
-all:		wc xref grammar
+CHK_LINT = cppcheck
+CHK_MEM = valgrind --tool=memcheck
+
+TARGETS := wc xref grammar
+CPP_FILES := $(wildcard ./*.cc)
+
+
+all:		$(TARGETS)
 
 wc.o:		wc.cc
 
@@ -25,4 +32,19 @@ test:		all
 	./grammar <../data/grammar_input
 
 clobber:
-	rm -f *.o *.exe core wc xref grammar
+	rm -f *.o *.exe core $(TARGETS)
+
+checklint:
+	$(CHK_LINT) $(CPP_FILES)
+
+checkmem:
+	$(CHK_MEM) $(TARGETS)
+
+
+
+
+
+
+
+
+

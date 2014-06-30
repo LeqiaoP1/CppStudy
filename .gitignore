@@ -1,2 +1,15 @@
-*~
-*.o
+# ingore all files
+*
+
+
+# keep those source or header files
+!*.cc
+!*.c
+!*.cpp
+!*.h
+!*.hpp
+
+# keep those data files
+!*.dat
+!*.txt
+

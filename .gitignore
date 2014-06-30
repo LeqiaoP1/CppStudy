@@ -13,3 +13,7 @@
 !*.dat
 !*.txt
 
+# keep makefiles
+!Makefile
+!makefile
+

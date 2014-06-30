@@ -10,10 +10,15 @@
 !*.hpp
 
 # keep those data files
-!*.dat
 !*.txt
+!*.dat
 
 # keep makefiles
 !Makefile
 !makefile
+
+# keep github org
+!README
+!*.md
+
 

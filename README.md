@@ -12,6 +12,14 @@
 2. TODO "Effective C++ 3rd"
    - Go through quickly
 
+## Project & Tools
+0. "Makefile" based
+1. GNU gcc/g++
+2. "cppcheck" // static code analysis
+3. "valgrind" // dynamic memcheck
+4. **TODO** try with any of unit testsuite
+
+
 
 
 

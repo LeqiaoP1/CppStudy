@@ -13,11 +13,12 @@
    - Go through quickly
 
 ## Project & Tools
-0. "Makefile" based
+0. GNU make
 1. GNU gcc/g++
 2. "cppcheck" // static code analysis
 3. "valgrind" // dynamic memcheck
-4. **TODO** try with any of unit testsuite
+4. **TODO** try with any of unit testsuites
+
 
 
 

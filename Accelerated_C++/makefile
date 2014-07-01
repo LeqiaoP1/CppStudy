@@ -9,6 +9,8 @@ SUBS = chapter00 chapter01 chapter02 chapter03 chapter04 \
 	chapter10 chapter11 chapter12 chapter13 chapter14 \
 	chapter15 chapter16
 
+.PHONY: test clobber checklint checkmem
+
 all:
 	-for c in $(SUBS); do echo "=== $$c =="; (cd $$c; $(MAKE) "CXX=$(CXX)" "CC=$(CC)") done
 
@@ -25,4 +27,5 @@ checklint:
 
 checkmem:
 	-for c in $(SUBS); do echo "=== $$c =="; (cd $$c; $(MAKE) "CHK_MEM=$(CHK_MEM)" checkmem);done
+
 

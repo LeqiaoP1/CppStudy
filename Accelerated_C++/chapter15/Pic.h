@@ -54,6 +54,8 @@ private:
 	Ptr<Pic_base> p;
 };
 
+
+
 // operations on `Picture's
 Picture frame(const Picture&);
 Picture hcat(const Picture&, const Picture&);
@@ -69,6 +71,8 @@ class String_Pic: public Pic_base {
 	wd_sz width() const;
 	void display(std::ostream&, ht_sz, bool) const;
 };
+
+
 
 class VCat_Pic: public Pic_base
 {
@@ -88,6 +92,8 @@ class VCat_Pic: public Pic_base
 	void display(std::ostream&, ht_sz, bool) const;
 };
 
+
+
 class HCat_Pic: public Pic_base {
 	friend Picture hcat(const Picture&, const Picture&);
 	Ptr<Pic_base> left, right;
@@ -103,6 +109,8 @@ class HCat_Pic: public Pic_base {
 #endif
 	void display(std::ostream&, ht_sz, bool) const;
 };
+
+
 
 class Frame_Pic: public Pic_base {
 	friend Picture frame(const Picture&);
